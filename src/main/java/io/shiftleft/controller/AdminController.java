@@ -88,10 +88,12 @@ public class AdminController {
     try {
       // no cookie no fun
       if (!auth.equals("notset")) {
-        //if(isAdmin(auth)) {
+        /*
+        if(isAdmin(auth)) {
           request.getSession().setAttribute("auth",auth);
           return succ;
         }
+        */
       }
 
       // split password=value
