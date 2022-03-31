@@ -22,7 +22,7 @@ phases:
   post_build:
     commands:
       - echo Starting code analysis with NG SAST...
-      - $HOME/sl analyze --app HelloShiftLeft --wait --java target/hello-shiftleft-0.0.1.jar
+      - $HOME/sl analyze --app HelloShiftLeft_AWS --wait --java target/hello-shiftleft-0.0.1.jar
     finally:
       - echo Ran NG SAST on your code
 artifacts:
